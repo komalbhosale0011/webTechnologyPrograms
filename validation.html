@@ -1,0 +1,79 @@
+<html>
+     <head>
+	      <script type="text/javascript">
+		   function vaildate()
+		   {
+		   var id=document.vaildatetion.id.value; 
+		   var format=/^[0-9A-Za-z]+$/;
+		     if(id.match(format))
+			 {
+		     document.getElementById("idm").innerHTML="";
+			  
+		   }
+		   else
+		   {
+		   document.getElementById("idm").innerHTML="please enter id must be alpha numeric";
+		   
+		   }
+		   
+		   var address=document.vaildatetion.add.value; 
+		   var format=/^[0-9A-Za-z]+$/;
+		     if(address.match(format))
+			 {
+		     document.getElementById("idadd").innerHTML="";
+			  
+		   }
+		   else
+		   {
+		   document.getElementById("idadd").innerHTML="please enter Name must be alpanumeric";
+		   
+		   }
+		   
+		   var name=document.vaildatetion.name.value; 
+		   var format=/^[A-Za-z]+$/;
+		     if(name.match(format))
+			 {
+		     document.getElementById("idname").innerHTML="";
+			  
+		   }
+		   else
+		   {
+		   document.getElementById("idname").innerHTML="please enter Name must be alphabet";
+		   }
+		  
+		  
+		  
+		    var mobileno=document.vaildatetion.contentno.value; 
+		   var format=/^[0-9]+$/;
+		     if(mobileno.match(format))
+			 {
+		     document.getElementById("mno").innerHTML="";
+			  
+		   }
+		   else
+		   {
+		   document.getElementById("mno").innerHTML="please enter Name must be numberic";
+		   }
+		  
+		   }
+		  </script>
+	 </head>
+	 <body>
+	 <form align="center" name="vaildatetion">
+	    <div align="center"><h1>Patient Admission Form</h1></div>
+	    patient Id <input type="text" name="id"><br>
+		<div id="idm" color="red"></div><br>
+		
+		patient name<input type="text" name="name"><br>
+			<div id="idname" color="red"></div><br><br>
+		  Address <textarea type="text" rows="5"  cols="6" name="add"></textarea><br>
+		  	<div id="idadd" color="red"></div><br><br>
+		city<input type="text" name="city"><br><br>
+		  content no <input type="text" name="contentno"><br>
+		  <div id="mno"><br>
+		Date of Birth<input type="text" name="dof"><br><br>
+		addmission Date<input type="text" name="admissiondate"><br><br>
+		<input type="button" name="submit" value="validate"onclick="vaildate()">
+	 </form>
+	 </body>
+</html>
